@@ -7,5 +7,9 @@ and MailSlurper provides the SMTP server and web frontend.
 For more information on MailSlurper please see MailSlurper [website](http://mailslurper.com/) and [Wiki](https://github.com/mailslurper/mailslurper/wiki).
 
 ## Docker Container usage
-
 See the related GitHub repository [https://github.com/tsitle/dockercontainer-mail-mailslurper](https://github.com/tsitle/dockercontainer-mail-mailslurper)
+
+## Source of MailSlurper binary packages
+The binary packages were built using 
+[https://github.com/tsitle/dockercontainer-app-go\_native\_compiler](https://github.com/tsitle/dockercontainer-app-go_native_compiler)  
+and the build script `build-mailslurper.sh` that the repository contains.

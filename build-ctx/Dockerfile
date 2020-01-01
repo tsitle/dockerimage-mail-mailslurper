@@ -1,12 +1,10 @@
-FROM scratch
-
+ARG CF_DEBIAN_RELEASE
 ARG CF_DEBIAN_VERSION
-ARG CF_CPUARCH_DEB_ROOTFS
+ARG CF_CPUARCH_DEB_DIST
+
+FROM tsle/os-debian-${CF_DEBIAN_RELEASE}-${CF_CPUARCH_DEB_DIST}:${CF_DEBIAN_VERSION}
 
 ENV DEBIAN_FRONTEND=noninteractive
-
-# add Debian root-fs
-ADD cache/debian_stretch/rootfs-debian_stretch_${CF_DEBIAN_VERSION}-${CF_CPUARCH_DEB_ROOTFS}.tar.xz /
 
 RUN \
 	apt-get update \
@@ -14,7 +12,6 @@ RUN \
 	&& apt-get --assume-yes dist-upgrade
 
 #
-
 ARG CF_CPUARCH_DEB_DIST
 
 ARG CF_MS_VERSION
@@ -38,7 +35,7 @@ RUN \
 			/var/lib/apt/lists*
 
 #
-ENV DEBIAN_FRONTEND=newt
+ENV DEBIAN_FRONTEND=dialog
 
 WORKDIR /opt/mailslurper
 
