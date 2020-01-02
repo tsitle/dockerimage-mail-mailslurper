@@ -8,8 +8,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN \
 	apt-get update \
-	&& apt-get --assume-yes upgrade \
-	&& apt-get --assume-yes dist-upgrade
+	&& apt-get upgrade -y \
+	&& apt-get dist-upgrade -y
 
 #
 ARG CF_CPUARCH_DEB_DIST
