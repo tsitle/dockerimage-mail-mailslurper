@@ -13,3 +13,10 @@ See the related GitHub repository [https://github.com/tsitle/dockercontainer-mai
 The binary packages were built using 
 [https://github.com/tsitle/dockercontainer-app-go\_native\_compiler](https://github.com/tsitle/dockercontainer-app-go_native_compiler)  
 and the build script `build-mailslurper.sh` that the repository contains.
+
+## Configuration
+[Server Settings](CONFIG_SERVER.md)  
+Source: [https://github.com/mailslurper/mailslurper/wiki/Server-Configuration](https://github.com/mailslurper/mailslurper/wiki/Server-Configuration)
+
+[Using a SQL-Server](CONFIG_SQLSERVER.md)  
+Source: [https://github.com/mailslurper/mailslurper/wiki/Using-A-SQL-Server](https://github.com/mailslurper/mailslurper/wiki/Using-A-SQL-Server)
