@@ -65,7 +65,7 @@ cd build-ctx || exit 1
 
 LVAR_DEBIAN_DIST="$(_getCpuArch debian_dist)"
 LVAR_DEBIAN_RELEASE="stretch"
-LVAR_DEBIAN_VERSION="9.11"
+LVAR_DEBIAN_VERSION="9.13"
 
 LVAR_MS_VER="1.14.1"
 
